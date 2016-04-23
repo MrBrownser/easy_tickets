@@ -3,11 +3,12 @@
 <head>
   <title>EasyTickets</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.23/css/bulma.min.css', media: 'all' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<a class="button">Button</a>
 <%= yield %>
 
 </body>
