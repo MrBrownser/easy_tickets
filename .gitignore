@@ -11,3 +11,7 @@
 /log/*
 !/log/.keep
 /tmp
+
+# RubyMine files
+.idea/*
+.idea

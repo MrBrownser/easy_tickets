@@ -1,14 +1,8 @@
 Rails.application.routes.draw do
 
-  root 'travelers_controller#search'
+  root to: 'travelers_controller#search'
+  resources :travelers
 
-  get 'travelers_controller/new'
-
-  get 'travelers_controller/search'
-
-  get 'travelers_controller/show'
-
-  root
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
