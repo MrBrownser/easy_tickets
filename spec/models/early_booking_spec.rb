@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe "travelers/new.html.slim", type: :view do
+RSpec.describe EarlyBooking, type: :model do
   pending "add some examples to (or delete) #{__FILE__}"
 end

@@ -1,5 +1,5 @@
 require 'rails_helper'
 
-RSpec.describe "travelers_controller/show.html.slim", type: :view do
+RSpec.describe "travelers/show.html.slim", type: :view do
   pending "add some examples to (or delete) #{__FILE__}"
 end

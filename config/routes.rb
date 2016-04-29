@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: 'travelers_controller#search'
+  root to: 'travelers#search'
   resources :travelers
 
 

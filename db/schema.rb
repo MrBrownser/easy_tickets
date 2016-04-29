@@ -11,10 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160423094231) do
+ActiveRecord::Schema.define(version: 20160429074856) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "early_bookings", force: :cascade do |t|
+    t.string   "origin"
+    t.string   "destination"
+    t.datetime "departure_date"
+    t.datetime "date_back"
+    t.string   "departure_train"
+    t.string   "back_train"
+    t.string   "departure_class"
+    t.string   "back_class"
+    t.integer  "departure_people"
+    t.integer  "back_people"
+    t.integer  "n_adults"
+    t.integer  "n_kids"
+    t.boolean  "promo_ferroviario"
+    t.boolean  "promo_pensionista"
+    t.boolean  "promo_tmesa"
+    t.boolean  "promo_fam_num"
+    t.boolean  "promo_plus"
+    t.boolean  "promo_other"
+    t.float    "departure_fare"
+    t.float    "back_fare"
+    t.string   "payment_method"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
 
   create_table "promotional_cards", force: :cascade do |t|
     t.string   "card_name"
