@@ -1,8 +1,8 @@
 class TravelersController < ApplicationController
-  def new
+  def home
   end
 
-  def search
+  def new
   end
 
   def show

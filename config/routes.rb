@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
-  root to: 'travelers#search'
-  resources :travelers
+  root to: 'travelers#home'
+
+  resources :travelers do
+    resources :early_bookings
+  end
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
