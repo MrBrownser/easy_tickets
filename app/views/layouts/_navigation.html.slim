@@ -1,11 +1,12 @@
-nav.nav.has-shadow
-  .container
-    .nav-left
-      =nav_link 'Buscar cliente', root_path
-      =nav_link 'Ficha cliente', '#'
-      =nav_link 'Billetes Renfe', '#'
-      =nav_link 'Petición reservas', '#'
-      =nav_link 'Viajes agencia', '#'
-    .nav-right
-      =nav_link 'Configuración', '#'
-      =nav_link 'Ayuda', '#'
+header.nav.has-shadow
+  .nav-left
+    a LOGO
+  .nav-center
+    =nav_link 'Buscar cliente', root_path
+    =nav_link 'Ficha cliente', '#'
+    =nav_link 'Billetes Renfe', '#', false
+    =nav_link 'Petición reservas', '#'
+    =nav_link 'Viajes agencia', '#', false
+  .nav-right
+    =nav_link 'Configuración', '#', false
+    =nav_link 'Ayuda', '#', false

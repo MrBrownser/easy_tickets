@@ -7,7 +7,7 @@ head
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
 body
-= render 'layouts/navigation'
-.columns
-  .column.is-10.is-offset-1
-    = yield
+  section.hero.is-light.is-bold.is-fullheight
+    .hero-head = render 'layouts/navigation'
+    .hero-body
+         = yield
