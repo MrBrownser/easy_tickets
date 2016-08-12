@@ -1,2 +1,20 @@
-<h1>TravelersController#new</h1>
-<p>Find me in app/views/travelers_controller/new.html.erb</p>
+.container
+  .columns
+    .column.is-three-quarters.is-offset-one-quarter
+      = form_for @traveler do |f|
+        .columns
+          .column.is-half
+            h2.title Datos personales
+            p.control = f.text_field :full_name, class: "input is-medium", placeholder: "Nombre completo del cliente"
+            p.control = f.text_field :identity_number, class: "input is-medium", placeholder: "DNI / NIE"
+            p.control = f.text_field :phone_number, class: "input is-medium", placeholder: "Teléfono"
+            p.control = f.text_area :address  , class: "textarea is-medium", placeholder: "Dirección"
+
+          .column.is-half
+            h2.title Tarjetas
+            - PromotionalCard.promotional_cards_list.each do |card_name|
+              p.control = text_field_tag card_name, nil, placeholder: card_name, class: "input is-medium"
+
+        p.control
+          = f.submit "Guardar", class: "button is-primary"
+          = link_to 'Cancelar', root_path, class: "button is-link"
