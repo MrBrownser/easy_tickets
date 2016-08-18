@@ -13,8 +13,7 @@
             .column.is-5
               h2.title Tarjetas
               - PromotionalCard.promotional_cards_list.keys.each do |card_name|
-                p.control = text_field_tag card_name, nil, placeholder: PromotionalCard.promotional_cards_list[card_name], class: "input is-medium"
-
+                p.control = text_field_tag "promotional_cards[#{card_name}]", nil, placeholder: PromotionalCard.promotional_cards_list[card_name], class: "input is-medium"
           .columns
             .column.is-5.is-offset-1
               p.control

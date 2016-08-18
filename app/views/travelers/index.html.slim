@@ -1,0 +1,15 @@
+table.table
+  thead
+    tr
+      th Nombre
+  tfoot
+    tr
+      th Nombre
+  tbody
+  - if @travelers.any?
+    - @travelers.each do |traveler|
+      tr
+        td = traveler.full_name
+  - else
+    tr
+      td = link_to "No hay ningún cliente en la base de datos. Añada uno ahora mismo!", new_traveler_path

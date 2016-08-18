@@ -2,6 +2,12 @@ class PromotionalCard < ActiveRecord::Base
   belongs_to :traveler
 
   def self.promotional_cards_list
-    ['Tarjeta Dorada', 'Renfe Joven', 'Familia Numerosa', 'Renfe Tempo', 'Ferroviario']
+    {
+      tarjeta_dorada: 'Tarjeta Dorada',
+      renfe_joven: 'Renfe Joven',
+      familia_numerosa: 'Familia Numerosa',
+      renfe_tempo: 'Renfe Tempo',
+      ferroviario: 'Ferroviario'
+    }
   end
 end

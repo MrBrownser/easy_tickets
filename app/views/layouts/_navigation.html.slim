@@ -3,7 +3,8 @@ header.nav.has-shadow
     a LOGO
   .nav-center
     =nav_link 'Buscar cliente', root_path, params, true
-    =nav_link 'Ficha cliente', '#', params, true
+    =nav_link 'Lista clientes(temporal)', travelers_path, params, true
+    =nav_link 'Ficha cliente', new_traveler_path, params, false
     =nav_link 'Billetes Renfe', '#', params, false
     =nav_link 'Petición reservas', '#', params, false
     =nav_link 'Viajes agencia', '#', params, false
