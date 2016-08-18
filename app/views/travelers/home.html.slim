@@ -1,12 +1,14 @@
-.container.has-text-centered
-  .columns
-    .column.is-half.is-offset-one-quarter.new-client-btn
-      = link_to 'Crear nuevo cliente', new_traveler_path, class: "button is-large is-primary"
-  .columns
-    .column.is-half.is-offset-one-quarter
-      h1.title Buscar por cliente
-      p.control
-        input.input.is-medium type="text" placeholder="Busca por cualquier dato del cliente: Nombre, DNI, dirección, teléfono..."
-      h1.title Buscar por localizador
-      p.control
-        input.input.is-medium type="text" placeholder="Introducir loc."
+section.hero.is-light.is-bold.is-fullheight
+  .hero-body
+    .container.has-text-centered
+      .columns
+        .column.is-half.is-offset-one-quarter.new-client-btn
+          = link_to 'Crear nuevo cliente', new_traveler_path, class: "button is-large is-primary"
+      .columns
+        .column.is-half.is-offset-one-quarter
+          h1.title Buscar por cliente
+          p.control
+            input.input.is-medium type="text" placeholder="Busca por cualquier dato del cliente: Nombre, DNI, dirección, teléfono..."
+          h1.title Buscar por localizador
+          p.control
+            input.input.is-medium type="text" placeholder="Introducir loc."

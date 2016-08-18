@@ -2,11 +2,11 @@ header.nav.has-shadow
   .nav-left
     a LOGO
   .nav-center
-    =nav_link 'Buscar cliente', root_path
-    =nav_link 'Ficha cliente', '#'
-    =nav_link 'Billetes Renfe', '#', false
-    =nav_link 'Petición reservas', '#'
-    =nav_link 'Viajes agencia', '#', false
+    =nav_link 'Buscar cliente', root_path, params, true
+    =nav_link 'Ficha cliente', '#', params, true
+    =nav_link 'Billetes Renfe', '#', params, false
+    =nav_link 'Petición reservas', '#', params, false
+    =nav_link 'Viajes agencia', '#', params, false
   .nav-right
-    =nav_link 'Configuración', '#', false
-    =nav_link 'Ayuda', '#', false
+    =nav_link 'Configuración', '#', params, false
+    =nav_link 'Ayuda', '#', params, false
