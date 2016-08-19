@@ -14,4 +14,4 @@
 
 # RubyMine files
 .idea/*
-.idea
+.idea.env
