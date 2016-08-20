@@ -10,7 +10,7 @@ class TravelersController < ApplicationController
     @traveler = Traveler.new(traveler_params)
     if @traveler.save
       handle_promotional_cards!(@traveler,params) # TO-DO handle validation errors when creating promotional cards!
-      redirect_to @traveler
+      redirect_to travelers_path
     else
       render "new"
     end
