@@ -1,6 +1,7 @@
 header.nav.has-shadow
   .nav-left
-    a LOGO
+    a.nav-item.is-brand href=root_path
+      img src=image_url("logo.png") alt="Viatges Cerdanyola Logo"
   .nav-center
     =nav_link 'Buscar cliente', root_path, params, true
     =nav_link 'Lista clientes(temporal)', travelers_path, params, true
