@@ -1,4 +1,6 @@
 class TravelersController < ApplicationController
+  http_basic_authenticate_with name: "agente", password: "123123"
+
   def home
   end
 
