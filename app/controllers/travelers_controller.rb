@@ -19,7 +19,7 @@ class TravelersController < ApplicationController
   end
 
   def index
-    @travelers = Traveler.all
+    @travelers = Traveler.all.order(:full_name)
   end
 
   def show
